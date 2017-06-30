@@ -3,7 +3,8 @@
 // Definitions by:
 // Dave Allen <https://github.com/fullflavedave>
 
-declare module Router {
+declare module 'meteor/iron:router' {
+  module Router {
   interface TemplateConfig {
     to?: string;
     waitOn?: boolean;
@@ -96,4 +97,5 @@ interface RouteController {
   extend(routeParams: Router.MapConfig);
 }
 
-declare var RouteController: RouteController;
+var RouteController: RouteController;
+}
